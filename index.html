@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#100d27"><title>TAPVERSE</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+<div class="app-shell">
+<header class="topbar"><div class="brand"><span class="brand-mark">✦</span><div><b>TAPVERSE</b><small>NEON UNIVERSE</small></div></div><button class="profile" id="profileBtn">👤 <span id="username">PLAYER</span></button></header>
+<section class="stats"><div class="stat"><small>COINS</small><b>🟡 <span id="coins">0</span></b></div><div class="stat"><small>LEVEL</small><b>⚡ <span id="level">1</span></b></div><div class="stat"><small>XP</small><b>💎 <span id="xp">0</span></b></div></section>
+<section class="hero"><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="hero-label">YOUR NEON AVATAR</div><div class="avatar" aria-label="Neon character">🧑‍🚀</div><div class="hero-title">ENTER THE <span>VERSE</span></div><p class="hero-sub">Tap. Earn. Evolve.</p><button class="tap-button" id="tapBtn"><span>✦</span><b>TAP TO EARN</b><small>+1 COIN · +1 XP</small></button><div class="energy"><div class="energy-line"><span>⚡ ENERGY</span><b><span id="energy">100</span>/100</b></div><div class="bar"><i id="energyBar"></i></div></div></section>
+<nav class="tabs"><button class="tab active" data-tab="tasks">▤ <span>TASKS</span></button><button class="tab" data-tab="rewards">🎁 <span>REWARDS</span></button><button class="tab" data-tab="friends">♧ <span>FRIENDS</span></button></nav>
+<section class="panel" id="tasksPanel"><div class="section-heading"><div><small>LEVEL UP YOUR GAME</small><h2>Daily missions</h2></div><span class="counter">3 ACTIVE</span></div>
+<div class="task"><div class="task-icon">📲</div><div class="task-copy"><b>Join our Telegram</b><small>Become part of the Verse</small></div><strong>+50 🟡</strong><button class="claim" data-reward="50">CLAIM</button></div>
+<div class="task"><div class="task-icon">🚀</div><div class="task-copy"><b>First 100 taps</b><small>Tap your way forward</small></div><strong>+100 🟡</strong><button class="claim" data-reward="100" id="tapMission">LOCKED</button></div>
+<div class="task"><div class="task-icon">🌌</div><div class="task-copy"><b>Explore the Verse</b><small>Check in for today</small></div><strong>+25 🟡</strong><button class="claim" data-reward="25">CLAIM</button></div></section>
+<section class="panel hidden" id="rewardsPanel"><div class="section-heading"><div><small>COME BACK EVERY DAY</small><h2>Daily rewards</h2></div></div><div class="reward-grid"><div>DAY 1<b>🟡 50</b></div><div>DAY 2<b>🟡 75</b></div><div>DAY 3<b>💎 10 XP</b></div><div>DAY 4<b>🟡 100</b></div><div>DAY 5<b>⚡ BOOST</b></div><div>DAY 6<b>🟡 150</b></div><div>DAY 7<b>🎁 MYSTERY</b></div></div><button class="wide-button" id="dailyBtn">CLAIM DAILY BONUS</button></section>
+<section class="panel hidden" id="friendsPanel"><div class="section-heading"><div><small>GROW THE COMMUNITY</small><h2>Invite friends</h2></div></div><p class="muted">Bring your crew into the Verse and earn rewards together.</p><div class="invite-card"><b>+100 COINS</b><small>For every friend who joins</small></div><button class="wide-button" id="inviteBtn">INVITE FRIENDS ↗</button></section>
+<footer> T A P V E R S E <small>SEASON 01 · THE BEGINNING</small></footer>
+</div><div class="toast" id="toast"></div><script src="app.js"></script></body></html>
